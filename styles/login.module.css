@@ -1,0 +1,37 @@
+#main {
+  overflow: hidden;
+}
+#flex {
+  width: 20vw;
+  height: 40vh;
+  position: absolute;
+  right: 7.5%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid white;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#header {
+  color: white;
+  top: 0%;
+}
+#img {
+  position: absolute;
+  height: 100vh;
+  width: 45vw;
+  left: -4%;
+}
+#footer {
+  position: absolute;
+  bottom: 0%;
+  color: rgb(102, 102, 102);
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+}

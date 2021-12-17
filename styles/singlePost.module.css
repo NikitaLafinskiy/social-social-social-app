@@ -1,0 +1,17 @@
+.flex {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.418);
+}
+.user {
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  transform: translateX(-50%);
+  position: relative;
+  left: 50%;
+}
+.title {
+}
+.body {
+}
