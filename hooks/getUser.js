@@ -8,7 +8,7 @@ const getUser = () => {
   useEffect(() => {
     axios({
       method: 'GET',
-      url: 'http://localhost:6969/getUser',
+      url: `https://${process.env.NEXT_PUBLIC_BACKEND_ROUTE}/getUser`,
       withCredentials: true,
     }).then((doc) => {
       const val = doc.data.user?.username;

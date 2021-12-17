@@ -38,7 +38,7 @@ export default function CreateComment() {
 
   const handleClick = () => {
     axios
-      .post('http://localhost:6969/createComment', {
+      .post(`https://${process.env.NEXT_PUBLIC_BACKEND_ROUTE}/createComment`, {
         body: state.newComment,
         publishedBy: state.publishedBy,
         publishedUnder: state.publishedUnder,

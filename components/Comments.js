@@ -15,7 +15,9 @@ export default function Comments(props) {
 
   useEffect(() => {
     if (!router.isReady) return;
-    const path = 'http://localhost:6969/viewComments/' + router.query.post;
+    const path =
+      `https://${process.env.NEXT_PUBLIC_BACKEND_ROUTE}/viewComments/` +
+      router.query.post;
     axios.get(path).then((doc) => {
       console.log(doc.data.comments);
       const data = doc.data.comments;

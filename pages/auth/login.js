@@ -17,7 +17,7 @@ export default function LogIn() {
     console.log(state);
     axios({
       method: 'POST',
-      url: 'http://localhost:6969/login',
+      url: `http://${process.env.NEXT_PUBLIC_BACKEND_ROUTE}/login`,
       withCredentials: true,
       data: state,
     })

@@ -7,7 +7,7 @@ export default function Logout() {
   useEffect(() => {
     axios({
       method: 'GET',
-      url: 'http://localhost:6969/logout',
+      url: `https://${process.env.NEXT_PUBLIC_BACKEND_ROUTE}/logout`,
       withCredentials: true,
     }).then(() => {
       router.push('/auth/login');
