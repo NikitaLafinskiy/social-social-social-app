@@ -16,4 +16,4 @@ export default function Home() {
     </div>
   );
 }
-// NEXT_PUBLIC_BACKEND_ROUTE=social-social-social.herokuapp.com
+// NEXT_PUBLIC_BACKEND_ROUTE=https://social-social-social.herokuapp.com
