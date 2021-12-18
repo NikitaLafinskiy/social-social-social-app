@@ -9,16 +9,14 @@ export default function Posts(props) {
   });
   const num = 1;
   useEffect(() => {
-    axios
-      .get(`https://${process.env.NEXT_PUBLIC_BACKEND_ROUTE}/find`)
-      .then((doc) => {
-        setState((prev) => {
-          return {
-            ...prev,
-            posts: doc.data,
-          };
-        });
+    axios.get(`${process.env.NEXT_PUBLIC_BACKEND_ROUTE}/find`).then((doc) => {
+      setState((prev) => {
+        return {
+          ...prev,
+          posts: doc.data,
+        };
       });
+    });
   }, [num]);
 
   const postsMapped = state.posts

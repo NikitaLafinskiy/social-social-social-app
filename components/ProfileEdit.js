@@ -73,7 +73,7 @@ export default function Profile() {
     fd.append('prevUser', state.prevUser);
 
     axios
-      .post(`https://${process.env.NEXT_PUBLIC_BACKEND_ROUTE}/profile/edit`, fd)
+      .post(`${process.env.NEXT_PUBLIC_BACKEND_ROUTE}/profile/edit`, fd)
       .then((doc) => {
         router.push('/');
       })

@@ -19,7 +19,7 @@ export default function Profile() {
     }
     axios
       .get(
-        `https://${process.env.NEXT_PUBLIC_BACKEND_ROUTE}/loadProfile?id=${router.query.id}`
+        `${process.env.NEXT_PUBLIC_BACKEND_ROUTE}/loadProfile?id=${router.query.id}`
       )
       .then((doc) => {
         const postsData = doc.data.data;
@@ -40,7 +40,7 @@ export default function Profile() {
         setPosts(mapped);
         axios
           .get(
-            `https://${process.env.NEXT_PUBLIC_BACKEND_ROUTE}/loadUser?id=${router.query.id}`
+            `${process.env.NEXT_PUBLIC_BACKEND_ROUTE}/loadUser?id=${router.query.id}`
           )
           .then((doc) => {
             if (doc.data.user.id === context.id) {

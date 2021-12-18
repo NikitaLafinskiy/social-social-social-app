@@ -38,7 +38,7 @@ export default function Create() {
     fd.append('postedBy', user.username);
     if (state.body) {
       axios
-        .post(`https://${process.env.NEXT_PUBLIC_BACKEND_ROUTE}/create`, fd)
+        .post(`${process.env.NEXT_PUBLIC_BACKEND_ROUTE}/create`, fd)
         .then((doc) => {
           router.push('/');
         })

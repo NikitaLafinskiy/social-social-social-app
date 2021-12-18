@@ -16,7 +16,7 @@ export default function SignUp() {
   const [err, setErr] = useState(null);
   const handleClick = () => {
     axios
-      .post(`https://${process.env.NEXT_PUBLIC_BACKEND_ROUTE}/signup`, state)
+      .post(`${process.env.NEXT_PUBLIC_BACKEND_ROUTE}/signup`, state)
       .then((doc) => {
         useRouter.push('/auth/login');
       })
