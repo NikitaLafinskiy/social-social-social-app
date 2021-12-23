@@ -3,7 +3,7 @@ import axios from 'axios';
 import router from 'next/router';
 
 export default function Logout() {
-  console.log('logout');
+  console.log('logot');
   const num = 1;
   useEffect(() => {
     axios({
