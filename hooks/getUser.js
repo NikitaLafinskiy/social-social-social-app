@@ -21,6 +21,7 @@ const getUser = () => {
           id: doc.data.user.id,
         };
         setUser(user);
+        console.log(user);
       } else if (!val) {
         router.push('/auth/signup');
       }

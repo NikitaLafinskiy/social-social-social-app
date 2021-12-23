@@ -6,6 +6,7 @@ import axios from 'axios';
 import Link from 'next/link';
 import useRouter from 'next/router';
 import Error from '../../components/Reusable/Error';
+import getUser from '../../hooks/getUser';
 
 export default function LogIn() {
   const [state, setState] = useState({
@@ -22,7 +23,8 @@ export default function LogIn() {
       data: state,
     })
       .then((doc) => {
-        console.log(doc);
+        // console.log(doc);
+        getUser();
         // useRouter.push('/');
       })
       .catch((err) => {
