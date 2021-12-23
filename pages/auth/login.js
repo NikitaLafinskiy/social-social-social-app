@@ -23,9 +23,9 @@ export default function LogIn() {
       data: state,
     })
       .then((doc) => {
-        // console.log(doc);
-        getUser();
-        // useRouter.push('/');
+        console.log(doc);
+        // getUser();
+        useRouter.push('/');
       })
       .catch((err) => {
         setErr('Unable to login');
